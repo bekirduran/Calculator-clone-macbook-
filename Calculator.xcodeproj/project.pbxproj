@@ -11,9 +11,9 @@
 		967E72D5244D12680091A35C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E72D4244D12680091A35C /* SceneDelegate.swift */; };
 		967E72D7244D12680091A35C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E72D6244D12680091A35C /* ViewController.swift */; };
 		967E72DA244D12680091A35C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967E72D8244D12680091A35C /* Main.storyboard */; };
-		967E72DD244D12680091A35C /* Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967E72DB244D12680091A35C /* Calculator.xcdatamodeld */; };
 		967E72DF244D12690091A35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967E72DE244D12690091A35C /* Assets.xcassets */; };
 		967E72E2244D12690091A35C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967E72E0244D12690091A35C /* LaunchScreen.storyboard */; };
+		967E72EC244D13650091A35C /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E72EB244D13650091A35C /* CalculatorLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		967E72D4244D12680091A35C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		967E72D6244D12680091A35C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		967E72D9244D12680091A35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		967E72DC244D12680091A35C /* Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calculator.xcdatamodel; sourceTree = "<group>"; };
 		967E72DE244D12690091A35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967E72E1244D12690091A35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		967E72E3244D12690091A35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967E72EB244D13650091A35C /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +60,38 @@
 			children = (
 				967E72D2244D12680091A35C /* AppDelegate.swift */,
 				967E72D4244D12680091A35C /* SceneDelegate.swift */,
-				967E72D6244D12680091A35C /* ViewController.swift */,
-				967E72D8244D12680091A35C /* Main.storyboard */,
+				967E72ED244D136D0091A35C /* Modal */,
+				967E72EA244D134E0091A35C /* View */,
+				967E72E9244D133E0091A35C /* Controller */,
 				967E72DE244D12690091A35C /* Assets.xcassets */,
 				967E72E0244D12690091A35C /* LaunchScreen.storyboard */,
 				967E72E3244D12690091A35C /* Info.plist */,
-				967E72DB244D12680091A35C /* Calculator.xcdatamodeld */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		967E72E9244D133E0091A35C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				967E72D6244D12680091A35C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		967E72EA244D134E0091A35C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				967E72D8244D12680091A35C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		967E72ED244D136D0091A35C /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				967E72EB244D13650091A35C /* CalculatorLogic.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				967E72D7244D12680091A35C /* ViewController.swift in Sources */,
-				967E72DD244D12680091A35C /* Calculator.xcdatamodeld in Sources */,
+				967E72EC244D13650091A35C /* CalculatorLogic.swift in Sources */,
 				967E72D3244D12680091A35C /* AppDelegate.swift in Sources */,
 				967E72D5244D12680091A35C /* SceneDelegate.swift in Sources */,
 			);
@@ -342,19 +366,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		967E72DB244D12680091A35C /* Calculator.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				967E72DC244D12680091A35C /* Calculator.xcdatamodel */,
-			);
-			currentVersion = 967E72DC244D12680091A35C /* Calculator.xcdatamodel */;
-			path = Calculator.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 967E72C7244D12680091A35C /* Project object */;
 }
